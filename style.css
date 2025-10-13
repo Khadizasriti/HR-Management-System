@@ -71,3 +71,31 @@ body {
 .createAccount a:hover {
     text-decoration: underline;
 }
+
+.popup {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  padding: 16px 24px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  animation: fadeInOut 4s ease forwards;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.popup.success {
+  background-color: #2ecc71;
+}
+
+.popup.error {
+  background-color: #e74c3c; 
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}

@@ -55,12 +55,11 @@ if (isset($_POST['signup'])) {
         <?php echo $msg; ?>
     </div>
     <script>
-        // Auto-hide popup after 4 seconds
         setTimeout(() => {
             const popup = document.querySelector('.popup');
             if (popup) popup.style.display = 'none';
         }, 4000);
     </script>
-    <?php } ?>
+<?php } ?>
 </body>
 </html>
