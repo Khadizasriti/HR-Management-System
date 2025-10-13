@@ -1,0 +1,73 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.login-container input {
+    width: calc(100% - 20px); 
+    padding: 12px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #1877f2;
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+.createAccount {
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.createAccount a {
+    color: #1877f2;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.createAccount a:hover {
+    text-decoration: underline;
+}
